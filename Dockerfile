@@ -1,7 +1,7 @@
 FROM node:14-alpine
 
 # Installing Adobe I/O CLI
-RUN npm install -g @adobe/aio-cli
+RUN echo n | npm install -g @adobe/aio-cli@8.3.0
 
 # Installating Cloud Manager Plugin for the Adobe I/O CLI
 RUN aio plugins:install @adobe/aio-cli-plugin-cloudmanager
